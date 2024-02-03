@@ -1,0 +1,56 @@
+getgenv().Config =  {
+   ["Main"] = {
+      ["Enabled Skip Farm"] = true,
+      ["Quest | Saber"] = true, 
+      ["Quest | Bartilo"] = true,
+      ["Quest | Race V2"] = true,
+      ["Quest | Race V3"] = true,
+      ["Quest | Rengoku"] = false,
+      ["Quest | Hop To Another For 1m+ Fruit (Swan Quest)"] = false,
+      ["Quest | Automatically Purchase Legendary Sword"] = true, 
+      ["Quest | Automatically Purchase Haki Color"] = true, 
+      ["Quest | Auto Farming Mastery For Sword"] = true,
+      ["Ingoring Eat Another Fruit If Current Fruit Is Awakened"] = true,
+      ["Automatically Hop For Rip_Indra"] = true,
+      ["Auto Farming Cake Prince If Max Level"] = {
+         ["Enabled"] = true,
+         ["Until Limit Fragment"] = 30000 
+      },
+      ["Auto Farming Bone If Max Level"] = {
+         ["Enabled"] = true
+      },
+      ["Misc | Hop"] = {
+         ["Enabled"] = true,
+         ["Delay"] = 400
+      },
+      ["Misc | Delay For Hopping"] = 15
+   },
+   ["Fruit"] = {
+      ["Misc / Fruit Sniping"] = { 
+         "Control-Control",
+         "Leopart-Leopart",
+         "Dough-Dough", 
+         "Venom-Venom", 
+         "Dragon-Dragom"
+      },
+      ["Misc / Fruit Looting"] = true,
+      ["Misc / Auto Raid If Can't Store"] = true,
+      ["Misc / Fragments Limit By Fruit Loot Raid"] = 30000,
+      ["Eat While Cant Store"] = true
+   },
+   ["Misc"] = {
+      ["Webhook"] = {
+         ["Url"] = "", -- ur webhooks 
+         ["Enabled"] = true,
+         ["Webhook Setting"] = {
+            ["Account Status"] = true ,
+            ["Delay"] = 300,
+         }
+      },
+      ["Remove Terrain"] = true,
+      ["Rejoin After x Time"] = 3600,
+      ["Fast Attack CD"] = 0.1
+   }
+}
+_G.Key = ""
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Ariescuti/kaitun/main/Envest"))();
